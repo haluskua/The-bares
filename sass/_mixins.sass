@@ -1,0 +1,24 @@
+@mixin backImage($image)
+  background: url($image)
+  background-size: cover
+  background-repeat: no-repeat
+
+@mixin phone
+  @media only (min-width: 1em), screen and (orientation: portrait)
+    @content
+
+@mixin phone-landscape
+  @media only (device-width: 1em), screen and (orientation: landscape)
+    @content
+
+@mixin tablet
+  @media only screen and (min-width: 481px) and (orientation: portrait)
+    @content
+
+@mixin tablet-landscape
+  @media only (device-width: 1em), screen and (orientation: landscape)
+    @content
+
+@mixin desktop
+  @media only screen and (min-width: 769px) and (orientation: landscape)
+    @content

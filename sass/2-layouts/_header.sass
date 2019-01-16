@@ -1,0 +1,682 @@
+
+
+@include phone
+	.hetpage
+		display: flex
+		height: 100vh
+		overflow: hidden
+		max-width: 100vw
+		flex-direction: column
+		background-size: cover
+		justify-content: flex-start
+		background-color: black
+		background: url('../dist/imgs/wed92.jpg') top no-repeat
+		background-size: cover
+		@include phone-landscape
+
+
+		@include tablet
+			flex-grow: 1
+			height: 100vh
+			max-width: 100vw
+			background-size: cover
+		@include tablet-landscape
+			display: flex
+			background: url('../dist/imgs/wed92.jpg') top no-repeat
+			background-size: cover
+		@include desktop
+			display: flex
+			background: url('../dist/imgs/wed92.jpg') top no-repeat
+			background-size: cover
+
+	.Colsplit-between
+		width: 100%
+		height: 93%
+		display: flex
+		position: relative
+		align-items: center
+		flex-direction: column
+		justify-content: flex-end
+		@include phone-landscape
+			align-items: flex-start
+			width: 100%
+		@include tablet
+			width: 100vw
+			margin: auto
+			padding: 0
+		@include tablet-landscape
+			justify-content: flex-end
+			align-items: center
+		@include desktop
+			margin-top: 33px
+			align-items: center
+			justify-content: flex-end
+			margin-bottom: 0
+
+	#Colsplit-box1
+		width: 90%
+		height: 33%
+		display: flex
+		padding-top: 119px
+		padding: 10px
+		position: relative
+		flex-direction: column
+		justify-content: space-around
+		// background-color: #232121
+		@include phone-landscape
+			width: 38%
+			height: 49%
+		@include tablet
+			height: 100%
+			margin-bottom: 25px
+		@include tablet-landscape
+
+		@include desktop
+			height: 28%
+
+	.landing-page
+		width: 100%
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+		background-color: #faf8ed
+		@include tablet
+			margin: 0
+
+	.hetpage-li
+		display: flex
+		width: 100%
+		@include tablet
+			width: 100%
+		@include desktop
+			height: 27px
+			align-items: center
+			width: 100%
+			padding-bottom: 31px
+
+	.home-desc
+		display: flex
+		margin: 0
+		text-align: center
+		flex-direction: column
+    justify-content: space-around
+    width: 80vw
+		@include tablet
+			margin-bottom: 42px
+
+	.bio
+		width: 100%
+		height: auto
+		display: flex
+		@include desktop
+			margin-top: 0
+
+	#thin
+		margin: 0
+		@include tablet
+
+		#bulgeword
+			padding: 3px
+			color: white
+			font-size: 2em
+			font-style: normal
+			font-weight: lighter
+			font-family: $font-stack-fajardose
+			@include phone-landscape
+				color: #ffeeb2
+			@include tablet
+				color: #fffef2
+				font-weight: lighter
+				font-size: 2.97em
+				letter-spacing: 0.033em
+				font-family: $font-stack-fajardose
+			@include desktop
+				font-size: 1.58em
+				font-weight: normal
+				color: #fefed9
+				letter-spacing: 0.09em
+
+	#hetinfo
+		width: 100%
+		color: #341e25
+		font-size: 0.86em
+		text-align: center
+		margin: 15px
+		font-weight: normal
+		letter-spacing: 0.03em
+		font-family: $font-stack-rajdhani
+		@include phone-landscape
+			font-size: 1.55em
+			letter-spacing: 0
+		@include tablet
+			width: 100%
+			height: 42px
+			line-height: 0px
+		@include desktop
+			height: 0px
+			border: none
+
+	#mini-desc
+		font-size: 1.8em
+		color: #b18c69
+		font-weight: bold
+		width: 100%
+		height: 100%
+		z-index: 99999
+		letter-spacing: 0.05em
+		line-height: 27px
+		border-bottom: 0.6px dotted #d16b5c
+		@include phone-landscape
+	    font-size: 0.84em
+	    padding: 3px
+		@include tablet
+			color: #341e25
+			font-weight: normal
+			font-size: 2.4em
+			letter-spacing: 0
+			border: none
+		@include desktop
+			font-size: 1em
+			font-weight: normal
+			letter-spacing: 0.05em
+			line-height: 24px
+			border: none
+
+	.intro
+		width: 100%
+		margin: auto
+		color: #303030
+		font-size: 0.9em
+		font-weight: normal
+		position: relative
+		text-align: center
+		letter-spacing: 0.54em
+		background-color: #e7e3d8
+		font-family: $font-stack-roboto
+		@include tablet
+			height: 60px
+			color: #341e25
+			margin-top: 32px
+			font-weight: 900
+			text-shadow: none
+			font-size: 2em
+			position: relative
+			letter-spacing: 0.02em
+			font-family: $font-stack-thin
+		@include desktop
+			font-size: 1.72em
+			margin: 0
+			letter-spacing: 0.52em
+
+	#my-name
+		height: 42%
+		margin: auto
+		display: none
+		color: #3ba728
+		font-size: 2.5em
+		padding-top: 82px
+		font-weight: lighter
+		text-transform: capitalize
+		font-family: $font-stack-audio
+		@include tablet
+			padding: 0
+			font-size: 2.77em
+			position: relative
+			font-family: $font-stack-audio
+
+	#coa-menu
+		display: none
+
+	#logo-space
+		display: none
+		border: 1px solid lightgoldenrodyellow
+		justify-content: center
+		border-radius: 7px
+		margin-left: 10px
+		height: 56px
+		width: 22vw
+		background-color: #ebcf87
+		background-image: url('../dist/imgs/newlogo.png')
+		background-size: contain
+		background-position: bottom
+		background-repeat: no-repeat
+		@include tablet
+			margin: 0
+			width: 15vw
+		@include desktop
+			margin: auto
+			width: 11vw
+			height: 50px
+			background-color: #cac1b4
+	.logo-desc
+		display: flex
+		justify-content: flex-start
+		flex-direction: column
+		align-items: center
+		text-decoration: none
+		.ok
+			font-size: 1em
+			color: #341e25
+			font-family: $font-stack-roboto
+			letter-spacing: 0.06em
+
+	#video-container
+		padding: 0
+		width: 100%
+		height: 80vh
+		flex-wrap: wrap
+		align-items: center
+		display: flex
+		padding-top: 11px
+		padding-bottom: 8px
+		justify-content: space-around
+		background-color: rgba(232, 227, 216, 0.98)
+		li
+			list-style: none
+
+	#music-container
+		height: auto
+		padding: 20px
+		justify-content: center
+		li
+			list-style: none
+			padding: 10px
+
+	.bgsong
+		width: 100%
+		padding-left: 40px
+		font-size: 0.77em
+		font-family: $font-stack-roboto
+		font-style: italic
+		color: #bba98d
+	#folders-container
+		padding: 0
+		width: 100%
+		height: 250px
+		flex-wrap: wrap
+		display: flex
+		padding-top: 11px
+		padding-bottom: 8px
+		justify-content: space-around
+		background-color: rgba(232, 227, 216, 0.98)
+		@include phone-landscape
+			display: flex
+			z-index: 999
+		@include tablet
+			width: 100% !important
+			padding: 0
+			height: 49px !important
+			display: flex
+			flex-flow: row
+			background-image: none
+			background-color: #fffef2
+			justify-content: space-around
+			border: 1px solid goldenrod !important
+		@include desktop
+			height: 21px
+			display: flex
+			flex-flow: row
+			align-self: center
+			border-radius: 8px
+			padding-bottom: 9px
+			background-image: none
+			justify-content: space-around
+			// background-color: #7d364f
+
+  .reduced
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		margin: 0
+		@include tablet
+			width: 94%
+			height: 61px
+			background-color: none
+			border: none
+		@include desktop
+			z-index: 999999
+
+		li
+			display: flex
+
+	.nav-folders
+		width: 85%
+		height: 33px
+		display: none
+		align-self: center
+		padding: 3px
+		border-bottom: 1px solid #ffde8f
+		&:focus
+			background-color: #030406
+		@include tablet
+			width: 100%
+			height: auto
+			display: flex
+			border: none
+			justify-content: space-between
+			&:focus
+				padding: 0
+				margin: 0
+				width: 100%
+		@include desktop
+			display: flex
+			border: none
+			// background-color: #7d364f
+
+	.nav-folders:nth-child(1)
+		display: none !important
+		@include tablet
+			display: flex !important
+		@include desktop
+			display: flex !important
+
+	#home-logo
+		display: none
+		margin-left: 4px
+		display: flex
+		// background: url('../dist/imgs/newlogo.png') center no-repeat
+		// background-size: cover
+		@include phone-landscape
+			display: flex
+			width: 39%
+			align-self: center
+			border: 0.3px dotted #ffc4c4
+			background-color: #fd58000d
+			background-size: cover
+		@include desktop
+			background-size: cover
+
+		@include tablet
+			height: 89%
+			margin-top: 0px
+		@include desktop
+			display: none
+			height: 90%
+			background-size: contain
+
+	.logo-home
+		// height: 57px
+		// display: flex
+		// z-index: 9999
+		// overflow: hidden
+		// margin-top: 57px
+		// background: url('../dist/imgs/newlogo.png') centerno-repeat
+		// background-size: contain
+		// background-position: center
+		// background-color: rgba(0, 0, 0, 0.43)
+		@include tablet
+			z-index: 999
+			margin-top: 24px
+			background-size: contain
+		@include tablet-landscape
+			display: none
+		@include desktop
+			height: 70%
+			margin: 0
+
+	.hamburger-menu
+		width: 100%
+		display: flex
+		color: #b18c69
+		cursor: pointer
+		line-height: 36px
+		text-align: center
+		font-weight: normal
+		align-items: center
+		text-decoration: none
+		flex-direction: column
+		font-family: sans-serif
+		background-color: #faf8ed
+		justify-content: space-between
+		@include tablet
+			padding: 0
+			width: 100%
+			margin: auto
+			color: #b2e057
+			border: none
+			cursor: pointer
+			font-size: 1.1em
+			font-weight: bold
+			letter-spacing: none
+			background-color: #7d364f
+			border-right: 1px solid #dedccd
+			&:focus
+				padding: 0
+				margin-left: 13px
+				border-left: none
+				background-color: #fffef2
+				text-transform: lowercase
+				border-right: 2px solid #ff1f3e
+		@include phone-landscape
+				&:focus
+					text-transform: normal
+		@include tablet
+				&:focus
+					text-transform: normal
+					margin: 0
+
+		@include desktop
+			height: 100%
+			line-height: 27px
+			color: #131426
+			font-size: 0.85em
+			background-color: #7d364f
+			text-transform: normal
+			border: none
+			&:focus
+				color: red
+				font-size: 0.93em
+				border-left: none
+				background-color: transparentize(yellow, 1)
+				text-transform: normal
+				border-bottom: 1px solid #bf399e
+
+	.nav-archives
+		font-family: $font-stack-rajdhani
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 1em
+		line-height: 33px
+		&:focus
+			text-align: center
+		&:active
+			text-align: center
+		@include phone-landscape
+			&:focus
+				text-transform: normal
+		@include tablet
+			text-align: center
+			background-color: none
+			&:focus
+				text-transform: normal
+				color: #b2e057
+		@include desktop
+			color: #7be23a
+			&:focus
+				color: red
+
+	.haus
+		top: 0
+		width: 100%
+		height: 40px
+		display: flex
+		position: fixed
+		z-index: 999999
+		background-color: #7d364f
+		@include phone-landscape
+			display: flex
+			position: fixed
+			align-self: center
+			width: 100vw
+			height: 36px
+			justify-content: space-around
+
+		@include tablet
+			top: 0
+			left: 0
+			height: 60px
+			display: none
+		@include desktop
+			display: none
+			height: 100px
+			border: 1px solid blue
+		ul
+			margin: 0
+			padding: 0
+			width: 92%
+			display: flex
+			position: relative
+			flex-flow: row-reverse
+			justify-content: space-between
+
+			@include desktop
+				display: flex
+			li
+				width: 50%
+				height: 100%
+				display: flex
+				cursor: pointer
+				position: relative
+				align-items: center
+				flex-direction: column
+				justify-content: center
+
+	.haus-menu
+		color: #2f3233
+		display: flex
+		font-size: 1em
+		font-weight: bolder
+		line-height: 24px
+		letter-spacing: 0.08em
+		text-transform: capitalize
+		font-family: $font-stack-roboto
+
+	.main-menu
+		left: 0px
+		bottom: 0px
+		width: 100%
+		height: 100%
+		display: flex
+		z-index: 99999
+		color: #b2e057
+		font-size: 1em
+		cursor: pointer
+		font-weight: bolder
+		align-items: center
+		text-decoration: none
+		text-transform: uppercase
+		letter-spacing: 0.05em
+		justify-content: center
+		font-family: $font-stack-roboto
+
+	.mobile-container
+		height: auto
+		width: 60%
+		top: 40px
+		display: none
+		z-index: 999999
+		position: fixed
+		justify-content: space-between
+		border-radius: 18px 0 0 0
+		@include phone-landscape
+			width: 50%
+
+		@include tablet
+			height: 76px
+			top: 0
+			left: 0
+			width: 100%
+			border: none
+			display: flex
+			z-index: 9999
+			position: fixed
+			background-image: none
+			align-items: flex-start
+			justify-content: space-around
+		@include desktop
+			height: auto
+			flex-direction: column
+			top: 0
+			height: 50px
+			width: 100%
+			border: none
+			border-radius: 0
+			display: flex
+			align-items: center
+			background-color: #faf6e6
+			justify-content: center
+			z-index: 99999999
+
+	.mobile-container .sticky
+		z-index: 999999999999
+		@include tablet
+			z-index: 99999999
+		@include desktop
+			z-index: 99999999
+
+	#menu-buttons
+		width: 100%
+		display: flex
+		background-color: #c78480
+		justify-content: flex-start
+		@include tablet
+			display: none
+		@include desktop
+			display: none
+
+	.mobile-menu
+		width: 61px
+		height: 22px
+		display: flex
+		z-index: 99999
+		border-radius: 1px
+		position: absolute
+		flex-direction: column
+		justify-content: center
+		border: 0.5px solid #ae8950
+
+	.exit-menu
+		width: 100%
+		display: flex
+		cursor: pointer
+		line-height: 39px
+		text-align: center
+		justify-content: center
+		@include tablet
+			display: none
+
+	.menu
+		color: #e8e3d8
+		font-size: 1.3em
+		font-weight: lighter
+		text-decoration: none
+		font-style: oblique
+		letter-spacing: 0.1em
+		font-family: $font-stack-Dancing-script
+	#nav
+		@include tablet
+			width: 100%
+			display: flex
+			justify-content: center
+			background-color: #faf6e6
+		@include desktop
+			width: 93vw
+			display: flex
+			justify-content: space-around
+			position: fixed
+			top: 0
+	.navbar
+	  display: flex
+
+
+	#navtabs
+		margin: 0
+		width: auto
+		padding: 5px
+	  display: flex
+	  flex-wrap: wrap
+		border-radius: 3px
+	  background-size: cover
+	  background-repeat: no-repeat
+		background-image: url('../dist/imgs/hero.png')

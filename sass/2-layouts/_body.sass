@@ -1,0 +1,928 @@
+
+@include phone
+  body
+    height: 100%
+    width: 100%
+    margin: 0 auto
+
+    main
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      max-width: 100%
+      height: auto
+      position: relative
+
+      section
+        display: flex
+        justify-content: flex-start
+        flex-direction: column
+        max-width: 100%
+        height: 98vh
+        position: relative
+        // border-top: 1px solid #d6a870
+        background-color: #faf8ed
+        // overflow-y: scroll
+        @include tablet
+        border-top: 1px solid #d6a870
+        height: auto
+
+        @include desktop
+          flex-direction: row
+          justify-content: center
+          border: none
+          background-size: cover
+
+  #large-3
+    display: flex
+    height: auto
+    overflow-y: auto
+    visibility: hidden
+    @include tablet
+      display: flex
+      height: auto
+      overflow-y: scroll
+      visibility: visible
+      justify-content: space-between
+    @include desktop
+      display: flex
+      justify-content: space-between
+      width: 100vw
+      height: auto
+      overflow-y: auto
+      visibility: hidden
+
+    #left, #right
+      display: none
+      @include tablet
+        display: none
+      @include desktop
+        display: flex
+        width: 25vw
+        height: 100%
+        background-color: green
+        z-index: 9999999
+  #left
+
+  #wagai
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-direction: column
+    width: 100vw
+    height: 100vh
+    margin: auto
+    padding-bottom: 40px
+    visibility: visible
+    overflow-y: scroll
+    background-color: #faf8ed
+    @include phone-landscape
+      padding: 0
+    @include tablet
+      height: 100vh
+      margin: auto
+      width: 83%
+      overflow: auto
+      visibility: visible
+      background-color: rgba(255, 254, 242, 0.26)
+
+    @include desktop
+      height: 100%
+      width: 50vw
+      margin: auto
+      overflow: hidden
+      visibility: visible
+      background-color: rgba(255, 254, 242, 0.26)
+      border: 1px solid #e5dcbc
+    .main-notice
+      margin: 20px 0
+      font-size: 1.2em
+      font-family: Times
+      font-weight: bolder
+      text-transform: capitalize
+      padding: 13px
+      color: red
+      text-align: center
+      line-height: 1.4em
+      letter-spacing: 0.04em
+    .main-paragraph
+      margin: 20px 0
+      font-size: 0.96em
+      font-family: $font-stack-roboto
+      color: #474b44
+      padding: 18px
+      text-align: justify
+      line-height: 1.66em
+      @include phone-landscape
+        padding: 18px
+        padding-top: 0
+        font-size: 0.85em
+        letter-spacing: 0
+      @include tablet
+        font-size: 1em
+        letter-spacing: normal
+        margin: 0
+        margin-top: 10px
+      @include desktop
+
+      span
+        font-size: 1.6em
+        font-weight: bold
+        font-family: $font-stack-rajdhani
+        color: #222222
+        line-height: 48px
+
+    #pen-off
+      width: 71%
+      text-align: center
+      font-size: 0.77em
+      letter-spacing: 0.01em
+      font-family: sans-serif
+      line-height: 19px
+      font-style: italic
+      color: tan
+      font-weight: normal
+
+      .portrait
+        max-width: 130px
+        border: 1px solid gray
+
+    #skills-set-imgs
+      display: flex
+      flex-wrap: wrap
+
+      #flying-skills
+        display: flex
+        flex-direction: column
+        position: relative
+
+        #pillar
+          display: none
+          justify-content: space-around
+          align-items: flex-end
+          position: relative
+          width: 68%
+          z-index: 9
+
+  .skills1
+    max-width: 70px
+    height: 100vh
+
+  .GD, .Adobe, .Webdev, .Musician
+    font-size: 0.89em
+    letter-spacing: 0.04em
+    font-family: sans-serif
+    font-weight: lighter
+    color: #131426
+    border-bottom: 1.2px solid #438506
+    margin-bottom: 21px
+    padding-bottom: 8px
+    @include tablet
+      margin-bottom: 16px
+
+  .skills-title
+
+  .snaps-section
+    height: 100vh
+  .projects
+    height: 100vh
+    border-bottom: 1px solid thistle
+
+  #grafix, #contact, .goals, #media-gallery, .wagai-weh, #media-gallery, #main-gallery, #wantoks-gallery
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: 97%
+    margin: 0
+    padding: 0
+    a
+      width: 100%
+      flex-wrap: wrap
+    @include tablet
+      height: 52vh
+      align-items: center
+      justify-content: space-around
+      a
+        display: flex
+        width: 73%
+        padding-top: 40px
+        justify-content: center
+        text-decoration: none
+        padding: 0
+    @include desktop
+      height: 69vh
+      a
+        border-top: 0.5px solid #b9ad92
+
+  .wagai-weh
+    // background-image: url('../dist/imgs/balcony.png')
+    // background-position: top
+    // background-size: auto
+    // border-top: 1px solid #d6a870
+  .grafix
+    text-decoration: none
+    align-items: center
+    font-style: oblique
+    font-size: 1.12em
+    letter-spacing: 0.022em
+    @include phone-landscape
+    @include tablet
+      border-bottom: 1px solid #eecd60
+      font-size: 0.91em
+      font-style: normal
+  //
+  // #grafix
+  //   background-image: url('../dist/imgs/RnG-background.png')
+  //   background-position: top
+  //   background-size: cover
+  //   background-repeat: repeat-y
+  //   overflow-y: scroll
+  //   text-decoration: none
+
+  .webdev, .film, .painting, .music-page
+
+    background-image: none
+  .film
+    background-color: #fce2f3
+    background-image: none
+
+  #goals
+    height: 100vh
+
+  .tag-title
+    margin: 0
+    width: 100%
+    margin-top: 0
+    line-height: 55px
+    text-align: center
+    font-weight: 600
+    font-style: normal
+    font-size: 1em
+    color: #e7e3d8
+    justify-content: center
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    background-color: #c78480
+    font-family: $font-stack-rajdhani
+    &:hover
+    @include phone-landscape
+      padding: 0
+    @include tablet
+      margin-top: 0
+      font-weight: normal
+      font-weight: bold
+      letter-spacing: 0.1em
+      font-size: 1.28em
+      background-color: #fffef2
+      color: #7ca342
+    @include desktop
+      border-top: 1px solid slategray
+      padding-top: 13px
+      width: 100%
+      color: #7ca342
+      background-color: snow
+      font-size: 2.04em
+
+
+  .sm-container
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    width: 80%
+  #social-media
+    display: flex
+    flex-wrap: wrap
+    width: 65%
+    padding: 8px
+    justify-content: space-between
+    list-style: none
+  #address
+    display: flex
+    width: 61%
+    height: 179px
+    list-style: none
+    flex-flow: column
+    line-height: 50px
+    justify-content: space-between
+    align-items: flex-end
+
+  .ctitle
+
+  .gcontact
+    display: flex
+    text-decoration: none
+    width: 100%
+    justify-content: center
+
+  .myname
+    color: #ffdba7
+    font-family: sans-serif
+    font-size: 0.95em
+    line-height: 25px
+    letter-spacing: 0.05em
+
+  .slider-inner
+  	max-width: 90.4%
+  	position: relative
+  	overflow: hidden
+  	float: left
+  	padding: 3px
+  	border: solid 1px #d3a436
+    background-color: white
+
+  .slider-inner img
+  	display: none
+  	max-width: 100%
+  	max-height: 250px
+
+  .slider-inner img.active
+  	display: flex
+
+  #prext
+    display: flex
+    justify-content: space-between
+    width: 61%
+    z-index: 99999
+
+  .prev,.next
+  	float: left
+  	cursor: pointer
+
+  .prev
+  	position: relative
+  	z-index: 99999
+  .next
+  	position: relative
+  	z-index: 999999
+
+  #imgslider-desc
+    display: flex
+    justify-content: center
+    width: 99%
+    height: auto
+
+    p
+      width: 95vw
+      font-size: 1.33em
+      letter-spacing: 0.04em
+      font-family: $font-stack-rajdhani
+      font-style: normal
+      color: #837c76
+      font-weight: lighter
+      text-align: center
+
+  #web-desc
+    display: flex
+    justify-content: center
+    font-size: 0.9em
+    font-family: sans-serif
+    text-align: center
+    width: 74%
+    line-height: 23px
+    border: none
+    color: #c28943
+
+  #thumbnails
+    display: flex
+    justify-content: flex-end
+    width: 99%
+    height: auto
+
+    p
+      color: #382d1e
+      font-size: 0.78em
+      font-family: sans-serif
+      text-align: center
+      padding: 4px
+      background-color: rgb(252, 248, 237)
+      border: 0.6px dotted gainsboro
+
+  #skills-column
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: flex-start
+    background-color: none
+    overflow-y: scroll
+  #Accordion
+    width: 90vw
+    margin-bottom: 20px
+    @include desktop
+
+  #cor-skills
+    color: #9b834d
+    display: flex
+    font-size: 1em
+    font-weight: normal
+    line-height: 24px
+    letter-spacing: 0.38em
+    text-transform: capitalize
+    font-family: $font-stack-roboto
+    text-align: center
+    font-weight: bolder
+    justify-content: center
+
+  button.accordion
+    font-family: $font-stack-rajdhani
+    cursor: pointer
+    padding: 12px
+    font-size: 1.02em
+    font-weight: bolder
+    border-top: none
+    border-left: none
+    border-right: none
+    text-transform: uppercase
+    border-bottom: 1px solid goldenrod
+    width: 90vw
+    text-align: center
+    outline: none
+    transition: 0.5s ease
+    letter-spacing: 0.04em
+    border-radius: 0 0 8px 8px
+    background-color: #f7efd6d9
+    color: #b18c69
+    margin-top: 10px
+    @include tablet
+      width: 60vw
+      border: none
+    @include desktop
+      width: 40vw
+
+  button.accordion.active, button.accordion:hover
+      transition: 0.5s ease
+      letter-spacing: 0.05em
+      font-weight: bold
+      text-align: center
+      font-size: 1.08em
+      line-height: 10px
+      border-bottom: 1px solid #f3dc99
+      background-color: #f7efd6d9
+      padding: 20px
+
+  div.panel
+      width: 85vw
+      padding: 16px
+      display: none
+      background-color: rgba(250, 248, 237, 0.86)
+      height: auto
+      .skills-caption
+        display: flex
+        justify-content: center
+        margin: auto
+        font-size: 0.93em
+        font-family: sans-serif
+        color: $purple
+        padding: 0px
+        text-align: justify
+        line-height: 1.56em
+        @include tablet
+          width: 52vw
+          padding: 10px 20px 10px 20px
+        @include desktop
+          width: 38vw
+          padding: 10px 20px 10px 20px
+
+  #gd-folders
+    display: flex
+    align-self: flex-start
+    justify-content: space-around
+    width: 75%
+    margin-top: 0
+    padding: 0
+    li
+      list-style: none
+      display: flex
+      justify-content: center
+      align-items: space-around
+      text-align: left
+      align-items: center
+      padding: 7px
+      h4
+        font-family: $font-stack-rajdhani
+        color: black
+        font-weight: bolder
+        font-size: 1em
+        line-height: 16.5px
+        align-self: flex-end
+        letter-spacing: 0.04em
+        margin: 0
+        padding-left: 5px
+        a
+          width: 0%
+
+      .fl-title
+        color: #090108
+        font-weight: normal
+        font-size: 0.98em
+        font-family: monospace
+        margin: 0
+
+  .gd-f2
+    // this width stops mobile menu bar from schinking onScroll
+    width: 88%
+    display: flex
+    justify-content: space-between
+
+    span
+      color: #8c857a
+      font-size: 0.84em
+      letter-spacing: 0.03em
+      font-style: italic
+      border-bottom: 1px dotted #a8a6a4
+
+  #more-info
+    color: #5c4d60
+    font-size: 0.85em
+    letter-spacing: 0.078em
+    font-style: italic
+    border-bottom: 1px dotted #a8a6a4
+
+  #folder-title
+    width: 100%
+    text-align: center
+    h3
+      font-size: 1.44
+      color: green
+
+  #gd-page
+    width: 100%
+    height: 120px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: flex-end
+    text-decoration: none
+    padding: 0
+    margin: 0
+    li
+      list-style: none
+      font-family: $font-stack-roboto
+      color: #4CAF50
+      height: 50%
+      margin-right: 20px
+
+    li:nth-child(2)
+      align-self: center
+      text-decoration: none
+      margin: 0
+      a
+        font-family: $font-stack-roboto
+        color: #607D8B
+        font-weight: bold
+        letter-spacing: 0.77em
+
+
+  /**
+   * Author: Tim Vervoort - info@timvervoort.com
+   * Licence: Free for commercial use
+   * Last update: 8th November 2017 - v1.0
+   */
+  #media-gallery
+    // width: 100%
+    // height: 100vh
+    // flex-direction: column
+    // justify-content: space-around
+    // align-items: center
+    a
+     align-items: center
+     flex-wrap: wrap
+
+
+  #wantoks-gallery
+    width: 100%
+    height: 100vh
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    a
+      align-items: center
+      flex-wrap: wrap
+      width: 100%
+    @include tablet
+      a
+        width: 73%
+
+  #main-gallery
+    width: 100%
+    height: 100vh
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    a
+      align-items: center
+      flex-wrap: wrap
+    @include desktop
+      width: 100vw
+
+
+    .aic
+      width: 94vw
+      justify-content: center
+      display: flex
+      align-items: center
+      flex-direction: column
+
+    #g-t
+      text-align: center
+      font-family: $font-stack-thin
+      font-size: 1.4em
+      letter-spacing: 0.03em
+      font-weight: bold
+      color: forestgreen
+      margin: 0
+      margin-bottom: 8px
+
+  .big-gallery
+    height: 100%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    overflow-y: scroll
+    border: 1px solid #e6dee2
+    justify-content: space-evenly
+    // margin-bottom: 41px
+
+  .fs-gal-view
+    display: none
+    height: 100%
+    width: 100vw
+    margin: 0
+    padding: 0
+    position: fixed
+    left: 0
+    top: 0
+    text-align: center
+    background-size: contain
+    background-position: center center
+    background-color: rgba(14, 7, 1, 0.85)
+    background-repeat: no-repeat
+    overflow: hidden
+    z-index: 999999
+
+  .fs-gal-view h1
+    display: flex
+    justify-content: center
+    flex-direction: column
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    min-width: 100%
+    max-width: 100%
+    margin: 0
+    padding: 0
+    height: 6%
+    font-family: $font-stack-roboto
+    letter-spacing: 0.07em
+    line-height: 50px
+    overflow: hidden
+    background: rgba(0, 0, 0, 0.9)
+    border-top: 1px solid #6b6958
+    font-size: .66em
+    font-weight: lighter
+    letter-spacing: 0.07em
+    color: #b3c7d3
+    font-size: 0.66em
+    font-family: sans-serif
+    text-align: center
+
+  .fs-gal-prev, .fs-gal-next
+    position: absolute
+    top: calc(72vh - 20px)
+    height: 40px
+    width: 40px
+    @include tablet
+      height: 55px
+      width: 55px
+      margin-top: 45px
+
+  .fs-gal-prev
+    left: 0
+    @include desktop
+      left: 47px
+
+  .fs-gal-next
+    right: 0
+    @include desktop
+      right: 47px
+
+  .fs-gal-close
+    left: 40px
+    height: 24px
+    width: 30px
+    background-color: #c4bba4e3
+    border-radius: 6px 6px 2px 2px
+    padding: 1px 6px 1px 6px
+    border: 0.5px solid #595856
+    top: calc(19vh - 5.8px)
+    position: absolute
+    z-index: 1
+    @include phone-landscape
+      left: 7px
+      top: calc(12vh - 5.8px)
+    @include tablet
+      width: 44px
+      height: 35px
+      background-color: #7d364f
+    @include desktop
+      left: 47px
+      top: calc(31vh - 5.8px)
+
+  .fs-gal:hover, .fs-gal-nav:hover, .fs-gal-close:hover
+    cursor: pointer
+
+  .freelance
+    background-color: #faf8ed
+    align-self: center
+    text-align: center
+    border: none
+    font-weight: normal
+    font-size: 1.09em
+    width: 100%
+    color: #faf8ed
+    margin: 0
+    border: 0
+    // border-bottom: 1px solid #ecdba4
+    border-top: none
+    font-family: $font-stack-roboto
+
+  .fs-gal
+    width: 140px
+    height: auto
+    float: left
+    padding: 7px
+
+  #accordion
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100vw
+    justify-content: flex-start
+    margin-top: 30px
+    @include tablet
+      height: 42vh
+      justify-content: space-around
+      margin-top: 0
+    @include desktop
+      height: 62vh
+      justify-content: space-around
+      margin-top: 0
+
+  .rgdp
+    display: flex
+    justify-content: center
+    color: #b18c69
+    font-weight: lighter
+    font-size: 2.3em
+    line-height: 61px
+    text-align: center
+    background-color: none
+    text-transform: lowercase
+    font-family: $font-stack-fajardose
+
+    @include desktop
+      padding: 30px 0 30px 0
+
+  .rgdp1
+    font-family: $font-stack-fajardose
+    text-transform: lowercase
+    display: flex
+    justify-content: center
+    color: #b18c69
+    font-weight: lighter
+    font-size: 2.6em
+    line-height: 61px
+    text-align: center
+    background-color: none
+    @include tablet
+      font-size: 3.5em
+  .nw-title
+    font-family: $font-stack-fajardose
+    text-transform: lowercase
+    display: flex
+    justify-content: center
+    color: #b18c69
+    font-weight: lighter
+    font-size: 2.6em
+    line-height: 61px
+    text-align: center
+    background-color: none
+    small
+      font-size: 0.67em
+      padding-left: 26px
+
+  .video
+    position: relative
+    padding-bottom: 56.25%
+    iframe
+      position: absolute
+      max-width: 100%
+      height: 300px
+
+  .container
+    height: 100%
+    width: 100vw
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    overflow-y: scroll
+    border: 1px solid #e6dee2
+    justify-content: space-evenly
+    @include phone-landscape
+
+    @include tablet
+      width: 90vw
+      height: 89%
+      margin-top: 20px
+      border: none
+    @include desktop
+      width: 60vw
+      z-index: 999
+
+  #skills-desc
+    display: none
+    width: 100%
+    justify-content: flex-start
+    position: relative
+    height: auto
+
+  #read-on
+    justify-content: flex-start !important
+    position: relative
+    margin: 0
+    padding: 0
+    font-weight: lighter
+    text-align: left
+    width: 100%
+    font-size: 0.96em
+    letter-spacing: 0.048em
+    font-family: $font-stack-rajdhani
+    color: #341e25
+
+    .showRead
+      border-bottom: 1px dotted
+    .open-caption
+      color: black
+      font-size: 1.2em
+      letter-spacing: 0.05em
+  #skills-descOpen
+    display: flex
+  #skills-descClose
+    display: none
+
+  .close-caption
+    display: flex
+  .open-caption
+    display: flex
+
+  #center-media
+    width: 100vw
+    height: 89%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    @include tablet
+      height: 33vh
+    div
+      height: auto
+      display: flex
+      flex-direction: column
+      align-self: center
+      @include tablet
+        width: 90vw
+
+      @include desktop
+        width: 66vw
+
+  footer
+    width: 100vw
+    display: flex
+    justify-content: space-around
+    letter-spacing: 0.027em
+    height: 65px
+    align-items: center
+    z-index: 99
+    background-color: white
+
+    #footer
+      display: flex
+      width: 87%
+      padding: 0
+      margin: 8px
+      flex-flow: row
+      justify-content: space-between
+      @include desktop
+        width: 44%
+      li
+        width: 100%
+        color: tan
+        list-style: none
+        font-size: 0.66em
+        line-height: 12px
+        font-weight: lighter
+        font-style: italic
+        font-family: $font-stack-roboto
