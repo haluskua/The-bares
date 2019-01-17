@@ -40,7 +40,7 @@ h2, h3 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     background-color: black;
-    background: url("../dist/imgs/wed92.jpg") top no-repeat;
+    background: url("../dist/imgs/R50.png") top no-repeat;
     background-size: cover;
   }
 }
@@ -61,18 +61,12 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: url("../dist/imgs/wed92.jpg") top no-repeat;
-    background-size: cover;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .hetpage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background: url("../dist/imgs/wed92.jpg") top no-repeat;
-    background-size: cover;
+    background: url("../dist/imgs/R50.png") top no-repeat;
   }
 }
 
@@ -273,7 +267,7 @@ h2, h3 {
   }
   #thin #bulgeword {
     padding: 3px;
-    color: white;
+    color: #d73a3b;
     font-size: 2em;
     font-style: normal;
     font-weight: lighter;
@@ -1360,7 +1354,7 @@ h2, h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin: auto;
     padding-bottom: 40px;
     visibility: visible;
@@ -1377,7 +1371,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #wagai {
-    height: 100vh;
+    height: 67%;
     margin: auto;
     width: 83%;
     overflow: auto;
@@ -1388,8 +1382,8 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #wagai {
-    height: 100%;
-    width: 50vw;
+    height: 67%;
+    width: 50%;
     margin: auto;
     overflow: hidden;
     visibility: visible;
@@ -1437,6 +1431,12 @@ h2, h3 {
     letter-spacing: normal;
     margin: 0;
     margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #wagai .main-paragraph {
+    font-size: 1.3em;
   }
 }
 
@@ -1818,7 +1818,7 @@ h2, h3 {
   }
   #skills-column {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1827,10 +1827,6 @@ h2, h3 {
             justify-content: flex-start;
     background-color: none;
     overflow-y: scroll;
-  }
-  #Accordion {
-    width: 90vw;
-    margin-bottom: 20px;
   }
   #cor-skills {
     color: #9b834d;
@@ -2325,7 +2321,7 @@ h2, h3 {
     padding: 7px;
   }
   #accordion {
-    height: 100vh;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

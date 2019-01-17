@@ -70,7 +70,7 @@
     align-items: center
     flex-direction: column
     width: 100vw
-    height: 100vh
+    height: 100%
     margin: auto
     padding-bottom: 40px
     visibility: visible
@@ -79,7 +79,7 @@
     @include phone-landscape
       padding: 0
     @include tablet
-      height: 100vh
+      height: 67%
       margin: auto
       width: 83%
       overflow: auto
@@ -87,8 +87,8 @@
       background-color: rgba(255, 254, 242, 0.26)
 
     @include desktop
-      height: 100%
-      width: 50vw
+      height: 67%
+      width: 50%
       margin: auto
       overflow: hidden
       visibility: visible
@@ -124,6 +124,7 @@
         margin: 0
         margin-top: 10px
       @include desktop
+        font-size: 1.3em
 
       span
         font-size: 1.6em
@@ -401,15 +402,11 @@
 
   #skills-column
     width: 100%
-    height: 100vh
+    height: 100%
     display: flex
     justify-content: flex-start
     background-color: none
     overflow-y: scroll
-  #Accordion
-    width: 90vw
-    margin-bottom: 20px
-    @include desktop
 
   #cor-skills
     color: #9b834d
@@ -755,7 +752,7 @@
     padding: 7px
 
   #accordion
-    height: 100vh
+    height: 100%
     display: flex
     flex-direction: column
     align-items: center
