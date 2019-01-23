@@ -799,14 +799,6 @@ h2, h3 {
     background-color: #7d364f;
     border-right: 1px solid #dedccd;
   }
-  .hamburger-menu:focus {
-    padding: 0;
-    margin-left: 13px;
-    border-left: none;
-    background-color: #fffef2;
-    text-transform: lowercase;
-    border-right: 2px solid #ff1f3e;
-  }
 }
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
@@ -826,14 +818,12 @@ h2, h3 {
   .hamburger-menu {
     height: 100%;
     line-height: 27px;
-    color: #131426;
     font-size: 0.85em;
-    background-color: #7d364f;
+    background-color: #fff8ee;
     text-transform: normal;
     border: none;
   }
-  .hamburger-menu:focus {
-    color: red;
+  .hamburger-menu:focus, .hamburger-menu:hover {
     font-size: 0.93em;
     border-left: none;
     background-color: rgba(255, 255, 0, 0);
@@ -877,10 +867,10 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-archives {
-    color: #7be23a;
+    color: #bf8457;
   }
-  .nav-archives:focus {
-    color: red;
+  .nav-archives:visited {
+    color: green;
   }
 }
 
@@ -1388,7 +1378,6 @@ h2, h3 {
     overflow: hidden;
     visibility: visible;
     background-color: rgba(255, 254, 242, 0.26);
-    border: 1px solid #e5dcbc;
   }
 }
 
@@ -1436,7 +1425,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #wagai .main-paragraph {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 
@@ -1651,11 +1640,11 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .tag-title {
     border-top: 1px solid slategray;
-    padding-top: 13px;
     width: 100%;
-    color: #7ca342;
-    background-color: snow;
+    color: #faf8ed;
     font-size: 2.04em;
+    background-image: url("../dist/imgs/orange_patter.png");
+    background-size: cover;
   }
 }
 

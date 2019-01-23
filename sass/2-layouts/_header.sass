@@ -12,7 +12,7 @@
 		background-color: black
 		background: url('../dist/imgs/R50.png') top no-repeat
 		background-size: cover
-		@include phone-landscape   
+		@include phone-landscape
 
 		@include tablet
 			flex-grow: 1
@@ -434,13 +434,6 @@
 			letter-spacing: none
 			background-color: #7d364f
 			border-right: 1px solid #dedccd
-			&:focus
-				padding: 0
-				margin-left: 13px
-				border-left: none
-				background-color: #fffef2
-				text-transform: lowercase
-				border-right: 2px solid #ff1f3e
 		@include phone-landscape
 				&:focus
 					text-transform: normal
@@ -452,13 +445,11 @@
 		@include desktop
 			height: 100%
 			line-height: 27px
-			color: #131426
 			font-size: 0.85em
-			background-color: #7d364f
+			background-color: #fff8ee
 			text-transform: normal
 			border: none
-			&:focus
-				color: red
+			&:focus, &:hover
 				font-size: 0.93em
 				border-left: none
 				background-color: transparentize(yellow, 1)
@@ -485,9 +476,9 @@
 				text-transform: normal
 				color: #b2e057
 		@include desktop
-			color: #7be23a
-			&:focus
-				color: red
+			color: #bf8457
+			&:visited
+				color: green
 
 	.haus
 		top: 0
